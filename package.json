@@ -1,0 +1,15 @@
+{
+  "name": "colas-estructura-datos",
+  "version": "1.0.0",
+  "description": "Casos de prueba para la estructura de datos Cola (Queue)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}

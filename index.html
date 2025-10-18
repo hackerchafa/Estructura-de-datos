@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estructura de Datos: Colas (Queue)</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 50%, #7e22ce 100%);
+            min-height: 100vh;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+            max-width: 1000px;
+            width: 100%;
+            padding: 40px;
+            margin-bottom: 30px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            color: #1e3c72;
+            font-size: 2.5em;
+            margin-bottom: 15px;
+        }
+
+        .subtitle {
+            color: #666;
+            font-size: 1.2em;
+        }
+
+        .cases {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .case-card {
+            background: #f8f9fa;
+            border-radius: 15px;
+            padding: 30px;
+            transition: all 0.3s;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .case-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .case-icon {
+            font-size: 4em;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .case-title {
+            font-size: 1.5em;
+            color: #333;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .case-description {
+            color: #666;
+            margin-bottom: 20px;
+            flex-grow: 1;
+            line-height: 1.6;
+        }
+
+        .case-button {
+            display: block;
+            text-decoration: none;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 15px 0;
+            border-radius: 10px;
+            text-align: center;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+
+        .case-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(30, 60, 114, 0.3);
+        }
+
+        footer {
+            color: rgba(255, 255, 255, 0.7);
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9em;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 25px;
+            }
+            
+            h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📚 Estructura de Datos: COLA (Queue)</h1>
+            <p class="subtitle">Selecciona uno de los casos de prueba para explorar cómo funciona la estructura de datos Cola</p>
+        </header>
+
+        <div class="cases">
+            <div class="case-card">
+                <div class="case-icon">👥</div>
+                <h2 class="case-title">Caso Simple: Cola de Atención</h2>
+                <p class="case-description">
+                    Implementación básica de una Cola para gestionar la atención de clientes en un negocio. 
+                    Ideal para entender el concepto FIFO (First In, First Out).
+                </p>
+                <a href="caso-simple/index.html" class="case-button">
+                    Explorar Caso Simple
+                </a>
+            </div>
+
+            <div class="case-card">
+                <div class="case-icon">🖨️</div>
+                <h2 class="case-title">Caso Real: Sistema de Impresión</h2>
+                <p class="case-description">
+                    Sistema completo de gestión de impresión con simulación de procesamiento en tiempo real.
+                    Una aplicación práctica de Colas en entornos reales.
+                </p>
+                <a href="caso-real/index.html" class="case-button">
+                    Explorar Caso Real
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        Creado para la clase de Estructura de Datos | <a href="https://github.com/hackerchafa/Estructura-de-datos">Ver en GitHub</a>
+    </footer>
+</body>
+</html>
