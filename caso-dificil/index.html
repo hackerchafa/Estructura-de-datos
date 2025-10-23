@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Caso Difícil - Cola Avanzada</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h1>📦 Cola Avanzada (Prioridad + FIFO)</h1>
+        <p>Simulación de un scheduler de trabajos con prioridad. Usa heap interno para prioridad.</p>
+    </div>
+
+    <div class="controls">
+        <input id="jobName" type="text" placeholder="Nombre del trabajo...">
+        <input id="jobWork" type="number" placeholder="Unidades" value="3" min="1">
+        <input id="jobPriority" type="number" placeholder="Prioridad (0=alta)" value="5" min="0">
+        <button id="addJob">➕ Agregar</button>
+    </div>
+
+    <div class="grid">
+        <div class="panel">
+            <div id="processing" class="processing"></div>
+            <div class="queue-list" id="queueDisplay"></div>
+            <div id="message" class="message"></div>
+        </div>
+        <div class="panel stats">
+            <div class="stat-card">Trabajos: <div id="jobsCount">0</div></div>
+            <div class="stat-card">Unidades: <div id="workCount">0</div></div>
+            <div class="stat-card">Procesados: <div id="processedCount">0</div></div>
+            <button id="startProcessing">▶️ Iniciar</button>
+            <button id="pauseProcessing" disabled>⏸️ Pausar</button>
+            <button id="clearJobs">🗑️ Limpiar</button>
+        </div>
+    </div>
+
+    <hr style="margin:20px 0;">
+    <a href="../index.html">← Volver al índice</a>
+</div>
+
+<script src="queue.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
